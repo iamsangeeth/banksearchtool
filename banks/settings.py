@@ -26,7 +26,7 @@ SECRET_KEY = 'at&vx9&y#1e#dls982*20)!$(yarsqg_*q=0irg8ww1=2r8(4!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['banksearchtool.herokuapp.com']
+ALLOWED_HOSTS = ['banksearchtool.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -165,13 +165,13 @@ STATIC_URL = '/static/'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
-STATIC_ROOT  =   os.path.join(PROJECT_ROOT, 'staticfiles')
+# PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
+STATIC_ROOT  =   os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 # Extra lookup directories for collectstatic to find static files
 STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
+    os.path.join(BASE_DIR, 'static'),
 )
 
 
