@@ -26,7 +26,7 @@ SECRET_KEY = 'at&vx9&y#1e#dls982*20)!$(yarsqg_*q=0irg8ww1=2r8(4!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['banksearhtool.herokuapp.com']
+ALLOWED_HOSTS = ['banksearchtool.herokuapp.com']
 
 
 # Application definition
